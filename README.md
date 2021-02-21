@@ -1,2 +1,2 @@
 # Gnutyud Portfolio
-https://gnutyud.github.io/Gnutyud-CV/
+https://gnutyud.github.io/Gnutyud-Portfolio/
