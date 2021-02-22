@@ -1,0 +1,38 @@
+.navside .logo a::before {
+    border-left: 4px solid #ffb400;
+    border-top: 4px solid #ffb400;
+}
+
+.navside .logo a::after {
+    border-right: 4px solid #ffb400;
+    border-bottom: 4px solid #ffb400;
+}
+
+.nav-menu li:hover a {
+    color: #ffb400;
+}
+
+.contact-info .contact-info-item .contact-icon,
+.project-item-inner .project-info h4,
+.project-filter button.active,
+.nav-menu li a.active,
+.about-intro h3 span {
+    color: #ffb400;
+}
+
+.home-social a,
+.timelife-item::before,
+.circle-dot,
+.btn,
+.section-intro h2::before,
+.section-intro h2::after,
+.nav-toggler span,
+.nav-toggler span::before,
+.nav-toggler span::after,
+.skills .skill-item .progress .progress-bar {
+    background-color: #ffb400;
+}
+
+.project-filter button.active {
+    border-color: #ffb400;
+}

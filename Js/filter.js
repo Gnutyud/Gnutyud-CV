@@ -25,3 +25,12 @@ for (let i = 0; i < totalFilterBtn; i++) {
         }
     });
 }
+// active nav menu buttons
+const navMenu = document.querySelector(".nav-menu"),
+    navMenuBtn = document.getElementsByClassName("nav-menu-link");
+for (var m = 0; m < navMenuBtn.length; m++) {
+    navMenuBtn[m].addEventListener("click", function() {
+        navMenu.querySelector(".active").classList.remove("active");
+        this.classList.add("active");
+    })
+}
