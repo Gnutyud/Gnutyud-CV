@@ -34,3 +34,31 @@ for (var m = 0; m < navMenuBtn.length; m++) {
         this.classList.add("active");
     })
 }
+// switcher skin color
+const links = document.getElementsByClassName("color-link");
+
+function swichColor(color) {
+    for (var i = 0; i < links.length; i++) {
+        if (color === links[i].getAttribute("title")) {
+            links[i].removeAttribute("disabled");
+        } else {
+            links[i].setAttribute("disabled", "true");
+        }
+    }
+}
+// setting btn toggle
+document.querySelector(".toggle-setting").addEventListener("click", function() {
+        document.querySelector(".skin-body-box").classList.toggle("open");
+    })
+    // darkmode click
+const darkmode = document.querySelectorAll(".darkmode-style");
+for (var i = 0; i < darkmode.length; i++) {
+    darkmode[i].addEventListener("change", function() {
+        if (this.value === "dark") {
+            document.body.className = "dark";
+        } else {
+            document.body.className = "";
+        }
+    })
+
+}

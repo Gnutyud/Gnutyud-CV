@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/skin/pink.css">
     <!-- skin body options -->
-    <link rel="stylesheet" href="/skin/pink.css" disabled>
-    <link rel="stylesheet" href="/skin/blue.css">
-    <link rel="stylesheet" href="/skin/green.css" disabled>
-    <link rel="stylesheet" href="/skin/orange.css" disabled>
-    <link rel="stylesheet" href="/skin/yellow.css" disabled>
+    <link rel="stylesheet" title="pink" class="color-link" href="/skin/pink.css" disabled>
+    <link rel="stylesheet" title="blue" class="color-link" href="/skin/blue.css" disabled>
+    <link rel="stylesheet" title="green" class="color-link" href="/skin/green.css" disabled>
+    <link rel="stylesheet" title="orange" class="color-link" href="/skin/orange.css" disabled>
+    <link rel="stylesheet" title="yellow" class="color-link" href="/skin/yellow.css" disabled>
     <title>Gnutyud Portfolio</title>
 </head>
 
@@ -44,7 +45,7 @@
         <!-- end of navside bar and start of main content also... -->
         <div class="main-content">
             <!-- Start of Home section -->
-            <section class="home" id="home">
+            <section class="home section-container" id="home">
                 <div class="home-avatar">
                     <img src="./images/avatar.jpg" alt="home-avatar">
                 </div>
@@ -382,6 +383,30 @@
                     </div>
                 </div>
             </section>
+        </div>
+    </div>
+    <!-- Skin box swicher -->
+    <div class="skin-body-box">
+        <div class="toggle-setting">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Color</h5>
+        <div class="skin-color">
+            <a href="javascript:void(0);" style="background-color: #ec1839;" onclick="swichColor('pink')"></a>
+            <a href="javascript:void(0);" style="background-color: #2196f3;" onclick="swichColor('blue')"></a>
+            <a href="javascript:void(0);" style="background-color: #fa5b0f;" onclick="swichColor('orange')"></a>
+            <a href="javascript:void(0);" style="background-color: #ffb400;" onclick="swichColor('yellow')"></a>
+            <a href="javascript:void(0)" style="background-color: #72b626;" onclick="swichColor('green')"></a>
+        </div>
+        <h5>Body Skin</h5>
+        <div class="darkmode">
+            <div>
+                <input type="radio" class="darkmode-style" name="darklight" value="light" id="light">
+                <label for="light">Light</label>
+            </div>
+            <div><input type="radio" class="darkmode-style" name="darklight" value="dark" id="dark">
+                <label for="dark">Dark</label>
+            </div>
         </div>
     </div>
     <!-- <script src="Js/pagination.js "></script> -->

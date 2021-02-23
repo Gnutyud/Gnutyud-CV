@@ -8,10 +8,8 @@
     border-bottom: 4px solid #72b626;
 }
 
-.nav-menu li:hover a {
-    color: #72b626;
-}
-
+.nav-menu li:hover a,
+.skin-body-box .toggle-setting .fa,
 .contact-info .contact-info-item .contact-icon,
 .project-item-inner .project-info h4,
 .project-filter button.active,

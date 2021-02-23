@@ -591,7 +591,6 @@
                         .project-item-inner .project-info h4 {
                             font-size: 18px;
                             font-weight: 700;
-                            /* color: #ffffff; */
                             text-transform: capitalize;
                         }
                         
@@ -686,6 +685,132 @@
                             padding: 0 50px;
                             border: none;
                             cursor: pointer;
+                        }
+                        /* Skin color box */
+                        
+                        .skin-body-box {
+                            position: fixed;
+                            background-color: #ffffff;
+                            top: 20px;
+                            right: 0px;
+                            padding: 15px;
+                            border: 1px solid #d4d4e3;
+                            border-right: none;
+                            text-align: center;
+                            transform: translateX(100%);
+                            transition: all 0.3s ease;
+                        }
+                        
+                        .skin-body-box.open {
+                            transform: translateX(0%);
+                        }
+                        
+                        .skin-body-box .toggle-setting {
+                            position: absolute;
+                            background-color: #ffffff;
+                            width: 45px;
+                            height: 45px;
+                            top: -1px;
+                            left: -45px;
+                            border: 1px solid #d4d4e3;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                        
+                        .skin-body-box .toggle-setting .fa {
+                            font-size: 20px;
+                            line-height: 43px;
+                        }
+                        
+                        .skin-body-box h5 {
+                            font-size: 16px;
+                            color: #302e4d;
+                            margin-bottom: 10px;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid #e8dfec;
+                        }
+                        
+                        .skin-body-box .skin-color {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: nowrap;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .skin-body-box .skin-color a {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                        
+                        .skin-body-box .darkmode {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        .skin-body-box .darkmode label {
+                            font-size: 16px;
+                            color: #504e70;
+                            font-weight: 400;
+                            padding-left: 3px;
+                        }
+                        /* darkmode style */
+                        /* background dark darkmode */
+                        
+                        body.dark .form-control:focus,
+                        body.dark .section-container {
+                            background-color: #151515;
+                        }
+                        /* background Light darkmode */
+                        
+                        body.dark .contact-form input,
+                        body.dark .contact-form textarea,
+                        body.dark .box-timelife,
+                        body.dark .navside,
+                        body.dark .nav-toggler {
+                            background-color: #222222;
+                        }
+                        /* border darkmode */
+                        
+                        body.dark .form-control,
+                        body.dark .project-item-inner .project-info,
+                        body.dark .project-item-inner .project-img,
+                        body.dark .info-items p,
+                        body.dark .box-timelife,
+                        body.dark .home-avatar img,
+                        body.dark .navside,
+                        body.dark .nav-toggler,
+                        body.dark .nav-menu li a {
+                            border-color: #393939;
+                        }
+                        /* Heading darkmode */
+                        
+                        body.dark .contact-info .contact-info-item h4,
+                        body.dark .project-filter button,
+                        body.dark .timelife-title,
+                        body.dark .edu-exp .title,
+                        body.dark .skills .skill-item h5,
+                        body.dark .info-items p,
+                        body.dark .section-intro h3,
+                        body.dark .section-intro h2,
+                        body.dark .home-title h1,
+                        body.dark .navside .logo a {
+                            color: #ffffff;
+                        }
+                        /* text darkmode */
+                        
+                        body.dark .contact-form input,
+                        body.dark .contact-form textarea,
+                        body.dark .contact-info .contact-info-item p,
+                        body.dark .timelife-desc,
+                        body.dark .timedate,
+                        body.dark .skills .skill-item .progress .progress-percent,
+                        body.dark .info-items p span,
+                        body.dark .section-intro p,
+                        body.dark .home-title p,
+                        body.dark .myword {
+                            color: #e9e9e9;
                         }
                         /* Responsive part */
                         
