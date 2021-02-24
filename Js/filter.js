@@ -27,12 +27,22 @@ for (let i = 0; i < totalFilterBtn; i++) {
 }
 // active nav menu buttons
 const navMenu = document.querySelector(".nav-menu"),
-    navMenuBtn = document.getElementsByClassName("nav-menu-link");
+    navMenuBtn = navMenu.getElementsByClassName("nav-menu-link"),
+    section = document.querySelectorAll(".section");
 for (var m = 0; m < navMenuBtn.length; m++) {
     navMenuBtn[m].addEventListener("click", function() {
         navMenu.querySelector(".active").classList.remove("active");
         this.classList.add("active");
+        showSection(this);
     })
+}
+
+function showSection(el) {
+    const href = el.getAttribute("href").split("#")[1];
+    for (var i = 0; i < section.length; i++) {
+        section[i].classList.add("hidden");
+    }
+    document.querySelector("#" + href).classList.remove("hidden");
 }
 // switcher skin color
 const links = document.getElementsByClassName("color-link");
@@ -49,6 +59,12 @@ function swichColor(color) {
 // setting btn toggle
 document.querySelector(".toggle-setting").addEventListener("click", function() {
         document.querySelector(".skin-body-box").classList.toggle("open");
+    })
+    // nav toggler
+document.querySelector(".nav-toggler").addEventListener("click", function() {
+        document.querySelector(".navside").classList.toggle("open");
+        document.querySelector(".nav-toggler").classList.toggle("open");
+        document.querySelector(".main-content").classList.toggle("open");
     })
     // darkmode click
 const darkmode = document.querySelectorAll(".darkmode-style");
