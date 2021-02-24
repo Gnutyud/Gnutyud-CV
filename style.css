@@ -134,7 +134,7 @@
                         }
                         
                         .nav-menu {
-                            padding: 80px 0;
+                            padding: 30px 0;
                             padding-right: 30px;
                         }
                         
@@ -162,8 +162,7 @@
                         .copyright {
                             font-size: 13px;
                             color: #7d7d7d;
-                            padding-bottom: 10px;
-                            padding-top: 80px;
+                            padding-bottom: 20px;
                             padding-right: 30px;
                         }
                         
@@ -204,7 +203,6 @@
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
-                            width: 100%;
                         }
                         
                         .home-avatar img {
@@ -891,4 +889,27 @@
                             .info-items p span {
                                 display: inline-block;
                             }
+                            /* navside */
+                            .nav-toggler {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                left: 30px;
+                            }
+                            .nav-toggler.open {
+                                right: 50px;
+                            }
+                            .navside {
+                                left: -270px;
+                            }
+                            .navside.open {
+                                left: 0;
+                                min-width: 100vw;
+                            }
+                            .main-content {
+                                padding-left: 0;
+                            }
+                            /* .main-content.open {
+                                padding-left: 270px;
+                            } */
                         }
