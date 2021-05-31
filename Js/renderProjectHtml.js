@@ -66,6 +66,24 @@ const project = [
     name: "App product",
     desc: "This is an App product website",
   },
+  {
+    id: 8,
+    link: "https://gnutyud.github.io/Weather_app/",
+    image: "./images/projects/weather-app.png",
+    alt: "Weather App",
+    category: "javascript",
+    name: "Weather App",
+    desc: "Insprired by weather default on IOS",
+  },
+  {
+    id: 9,
+    link: "https://gnutyud.github.io/exam_Landing_page/",
+    image: "./images/projects/exam-landing-page.png",
+    alt: "landing page",
+    category: "landing-page",
+    name: "Product Landing Page",
+    desc: "This was an exam HTML & CSS from FA",
+  },
 ];
 
 function renderProject(arr) {
