@@ -45,6 +45,9 @@ for (var m = 0; m < navMenuBtn.length; m++) {
 const hire_btn = document.getElementById("hire-btn");
 hire_btn.addEventListener("click", function () {
   showSection(this);
+  // add class active in contact nav bar to change color
+  navMenu.querySelector(".active").classList.remove("active");
+  document.querySelector(".fa-comments").parentNode.classList.add("active");
 });
 // show section function
 function showSection(el) {

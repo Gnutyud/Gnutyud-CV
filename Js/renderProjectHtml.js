@@ -84,6 +84,15 @@ const project = [
     name: "Product Landing Page",
     desc: "This was an exam HTML & CSS from FA",
   },
+  {
+    id: 10,
+    link: "https://gnutyud.github.io/300_codes_for_kids/",
+    image: "./images/projects/300-bai-code-thieu-nhi.png",
+    alt: "300 Bai Code Thieu Nhi",
+    category: "javascript",
+    name: "300 Bài Code Thiếu Nhi",
+    desc: "You can test your JavaScript skills with this Quiz.",
+  },
 ];
 
 function renderProject(arr) {
