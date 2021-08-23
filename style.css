@@ -422,13 +422,10 @@ ul {
 
 /*  to create equal height boxes using flexbox */
 
-
-/* .education,
-            .experience,
-            .experience-content,
-            .education-content {
-                flex: 1;
-            } */
+.education,
+.experience {
+    flex: 1;
+}
 
 .edu-exp .title {
     font-size: 24px;
